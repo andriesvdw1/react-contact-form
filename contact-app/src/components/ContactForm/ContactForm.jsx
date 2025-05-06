@@ -10,7 +10,7 @@ function ContactForm() {
     <form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
         <h1>Contact me:</h1>
         <label htmlFor="inputMessage"></label>
-        <input {...register('inputMessage', {required: true})}
+        <textarea {...register('inputMessage', {required: true})}
         className='input-message'
         type="text" placeholder='message' id='inputMessage' />
         <button type='submit'>Send</button>
